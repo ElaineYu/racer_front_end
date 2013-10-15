@@ -1,43 +1,14 @@
 <div class="container">
-  <h1>JS RACER</h1>
- 
- <table class="racer_table">
-  <tr id="player1_strip">
-    <td class="active"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>|</td>
-  </tr>
-  <tr id="player2_strip">
-    <td class="active"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>|</td>
-  </tr>
-</table>
+  <h1>Welcome</h1>
 
+  <h2>Login</h2>
+    <div class="user_login">
+      <form action ="/process_users" method="post">
+        <p><label for="player1_initials">Player 1</label><input type="text" name="player1[initials]"/></p>
+        <p><label for="player2_initials">Player 2</label><input type="text" name="player2[initials]"/></p>
+        <p><input type ="submit" value="START!"/></p>
+      </form>
+    </div>
 </div>
+
+

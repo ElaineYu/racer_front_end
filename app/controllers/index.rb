@@ -9,8 +9,8 @@ end
 
 post '/process_users' do
 	# if Round.has_two_players.valid?
-	  @player1 = Player.create(initials: params[:player1_initials])
-	  @player2 = Player.create(initials: params[:player2_initials])
+	  @player1 = Player.find_or_create_by_initials(initials: params[:player1_initials])
+	  @player2 = Player.find_or_create_by_initials(initials: params[:player2_initials])
 	  #@round   = Round.create()
 	  redirect to('/play') # only use redirect for 'get' routes
 
